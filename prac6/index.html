@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pet Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="heading">
+      <h1>About Your Pet 🐾</h1>
+    </div>
+    <form class="form" id="form" onsubmit="sub();return false;">
+      <label for="name">Pet's Name : </label>
+      <input type="text"  name="name" id="name" value="" autocomplete="off" required><br>
+      <label for="age">Age : </label>
+      <input type="number" step="any" name="age" id="age" value=""  autocomplete="off" required><br>
+      <label for="weight">Weight (in kg) : </label>
+      <input type="number" step="any" name="weight" id="weight" value="" autocomplete="off" required><br>
+      <label for="type">Type : </label>
+      <input type="text" name="type" id="type" value="" autocomplete="off" required><br>
+      <label for="like">What It Likes The Most : </label>
+      <input type="text" name="like" id="like" value="" autocomplete="off" required><br>
+      <button type="submit" name="submit">Submit ➜</button>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
