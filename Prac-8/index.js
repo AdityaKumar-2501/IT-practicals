@@ -2,6 +2,7 @@ function letsChange() {
     $("table").addClass("tableClass");
     $("html").addClass("htmlClass");
     $("#main").addClass("divClass");
+    $("#header").addClass("addheader")
     $("#heading").addClass("heading");
     $("#fee").addClass("fee");
     $("th").addClass("th");
@@ -9,10 +10,5 @@ function letsChange() {
     $("#criteria").addClass("element criteria");
     $("#eligibility").addClass("element eligibility");
     $("#future").addClass("future");
-    $("#futureElement").addClass("futureClass");
     $("button").hide();
 };
-
-$(function () {
-    // Add , Something you want to execute at the start.
-})

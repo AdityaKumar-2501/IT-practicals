@@ -1,7 +1,7 @@
-.htmlClass {
-    background: linear-gradient(to right, #a8c0ff, #3f2b96);
+.htmlClass{
+  background: #3F4E4F;
+  color:white;
 }
-
 .divClass {
     text-align: center;
 }
@@ -11,9 +11,22 @@
     margin-right: auto;
 }
 
+.addheader{
+  background: skyblue;
+  margin: auto;
+  margin-top: -30px;
+  max-width: 1200px;
+  border-radius: 10px;
+  color: white;
+}
+.addheader:hover {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
 .th {
     font-size: 40px;
-    color: #474350;
+    color: #00ABB3;
     font-style: oblique;
 
 }
@@ -23,9 +36,8 @@
 }
 
 .heading {
-    font-size: 75px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-decoration:underline wavy;
+    font-size: 60px;
+    font-family:sans-serif;
 }
 
 .fee {
@@ -34,25 +46,29 @@
 }
 
 .future{
+    margin: 20px auto;
     font-size: 40px;
-    text-decoration:underline dotted;
+    background: #F29191;
+    color: white;
+    max-width: 1000px;
+    min-height: 60px;
+    border-radius: 10px;
+}
+.future:hover {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
-.futureClass{
-    font-size: 40px;
-    text-decoration:underline dotted;
-}
 
 .element.criteria {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: sans-serif;
     font-weight: 1000;
-    font-style: oblique;
     font-size: x-large;
-    color: firebrick;
+    color: #E0144C;
 }
 
 .element.eligibility {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: serif;
     font-weight: 1000;
     font-style: oblique;
     font-size: large;
