@@ -1,0 +1,25 @@
+{
+    "pet": [
+        {
+            "name": "Garfield",
+            "age": "4",
+            "weight": "10",
+            "type": "Cat",
+            "favouriteThing": "Whisker's food"
+        },
+        {
+            "name": "Browny",
+            "age": "5",
+            "weight": "15",
+            "type": "Dog",
+            "favouriteThing": "Playing with ball."
+        },
+        {
+          "name": "Duster",
+          "age": "2",
+          "weight": "8",
+          "type": "Dog",
+          "favouriteThing": "Play dead with otheres."
+        }
+    ]
+}

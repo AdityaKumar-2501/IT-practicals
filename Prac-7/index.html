@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical_7</title>
+    <style>
+        html {
+            background-color: #F7A4A4;
+        }
+
+        table {
+            text-align: center;
+            width: 100%;
+            border: 1px solid;
+        }
+
+        th {
+            font-size: xx-large;
+            text-decoration: underline;
+        }
+
+       tbody tr:hover {
+            background-color: #FF8DC7;
+            font-size: x-large;
+        }
+
+        tr {
+            font-size: large;
+        }
+
+        .container {
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 5%;
+            border-radius: 5px;
+            background-color: #FEBE8C;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="text-align: center; font-size: 100px;">PET</p>
+    <div class="container">
+        <table><thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Weight</th>
+            <th>Type</th>
+            <th>Favourite Thing</th>
+        </thead>
+            <tbody id="a">
+            </tbody>
+        </table>
+    </div>
+    <script>
+      setTimeout(loadDoc(), 0);
+      function loadDoc() {
+          let xhttp = new XMLHttpRequest();
+          xhttp.open("GET", "pet.json", true);
+          xhttp.send();
+          xhttp.onreadystatechange = function () {
+               if (this.readyState == 4 && this.status == 200) {
+                  var x = JSON.parse(this.response);
+                  var temp = "";
+                  for (var i = 0; i < Object.keys(x.pet).length; i++) {
+                      temp = temp.concat("<tr><td>" + x.pet[i].name + "</td><td>" + x.pet[i].age + "</td><td>" + x.pet[i].weight + "</td><td>" + x.pet[i].type + "</td><td>" + x.pet[i].favouriteThing + "</td></tr>");
+                      document.getElementById("a").innerHTML = temp;
+                  }
+              }
+          };
+      }
+    </script>
+</body>
+
+</html>

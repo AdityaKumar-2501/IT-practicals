@@ -16,6 +16,9 @@ button {
 
 p{
   text-align: left;
+  font-size: 30px;
+  margin-bottom: 5%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .buttonRed:hover {
     background-color: red;
