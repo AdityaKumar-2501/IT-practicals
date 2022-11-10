@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&family=Xanh+Mono&display=swap');
+button {
+    margin: 20px;
+    width: 150px;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.container{
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+}
+
+p{
+  text-align: left;
+}
+.buttonRed:hover {
+    background-color: red;
+}
+
+.buttonGreen:hover {
+    background-color: Green;
+}
+
+.buttonBlue:hover {
+    background-color: blue;
+}
+
+.buttonSize10:hover {
+    font-size: 10px;
+}
+
+.buttonSize20:hover {
+    font-size: 20px;
+}
+
+.buttonSize30:hover {
+    font-size: 30px;
+}
+
+.buttonFontCursive:hover {
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.buttonFontPoorStory:hover {
+    font-family: 'Poor Story', cursive;
+    font-size: 20px;
+}
+
+.buttonFontXanhMono:hover {
+    font-family: 'Xanh Mono', monospace;
+    font-size: 20px;
+}

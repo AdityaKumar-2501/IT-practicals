@@ -1,44 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prac-4</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Practical_4</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
 <body>
-    <p id="root"></p>
-</body>
-
-<script>
-    const element = document.getElementById('root');
-    let text = '';
-    // setInterval(show,1000);
-    // show();
-    // function show() {
-    //     for (let i = 2; i <= 10; i++) {
-    //         for (let j = 1; j <= 10; j++) {
-    //             text += i + ' x ' + j + ' = ' + i * j + '<br>';
-    //             element.innerHTML = text;
-
-    //             setInterval(function () { element.innerHTML = text }, 1000)
-    //         }
-
-
-    //     }
-    //     element.style.columns = '9';
-    // }
-    let i = 2;
-        for(i; i<=10 ;i++){
-            for(let j = 1 ; j<=10 ;j++){
-                product = 
+    <p id="2" style="font-size: 20px;color: #F7A4A4;"></p>
+    <p id="3" style="font-size: 25px;color: #FEBE8C;"></p>
+    <p id="4" style="font-size: 30px;color: #B1B2FF;"></p>
+    <p id="5" style="font-size: 35px;color: #AAC4FF;"></p>
+    <p id="6" style="font-size: 40px;color: #54BAB9;"></p>
+    <p id="7" style="font-size: 45px;color: #FFB3B3;"></p>
+    <p id="8" style="font-size: 50px;color: #F675A8;"></p>
+    <p id="9" style="font-size: 55px;color: #AF7AB3"></p>
+    <p id="10" style="font-size: 60px;color: #80558C;"></p>
+    <script>
+        let table = 2;
+        var intervalId = setInterval(startExecution, 1000);
+        function startExecution() {
+            let result = '';
+            let temp ;
+            for (let i = 1; i <= 10; i++) {
+                temp = i*table;
+                result = result.concat(temp.toString());
+                result = result.concat(' ');
             }
-            
-            text.concat()
-        }
+            if (table > 9) {
+                clearInterval(intervalId);
+                document.getElementById(table.toString()).innerHTML = result;
+            } else {
+                document.getElementById(table.toString()).innerHTML = result;
+                table++;
+            }
 
-</script>
+        }
+    </script>
+</body>
 
 </html>
